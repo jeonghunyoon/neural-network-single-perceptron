@@ -28,7 +28,7 @@ def calculate_gradient(y, x_vector, weight_vector, learning_rate):
 def train_neural_network(data_matrix, labels, iterator_number):
     training_data_size = shape(data_matrix)[0]
     weight_vector_length = shape(data_matrix)[1]
-    weight_vector = 2 * random.random(4) - 1
+    weight_vector = 2 * random.random(weight_vector_length) - 1
     for i in range(iterator_number):
         for j in range(training_data_size):
             data = array(data_matrix[j]).flatten()
